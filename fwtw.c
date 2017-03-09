@@ -68,10 +68,11 @@ void aosleep(int ms);
 #define line_follow_threshold 155 
 
 
-int main() 
+int main ()
 { //Start What Robot Does
-    
-    return 0;
+   line_follow_left_fw(line_follow_threshold, 1200, ramp);
+   line_follow_left_fw(line_follow_threshold, 1200, ground);
+   return 0;
 } //End What Robot Does
 
 
